@@ -10,14 +10,8 @@ export default defineConfig({
 
   build: {
     target: "es2015",
-    outDir: "QRCode-release",
+    outDir: "dist",
     chunkSizeWarningLimit: 2000,
-    terserOptions: {
-      compress: {
-        drop_console: true, // 生产环境去除 console
-        drop_debugger: true, // 生产环境去除 debugger
-      },
-    },
 
     dynamicImportVarsOptions: {
       warnOnError: true,
