@@ -1,8 +1,8 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 export default defineConfig({
+  base: "/qr-code/",
   server: {
-    base: "/qr-code/",
     port: 9090,
     open: true,
   },
